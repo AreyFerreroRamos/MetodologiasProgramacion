@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1539973208 source:c:\users\gl552w-dm142t\documents\documentos de arey\cuarto\primer cuatrimestre\metodologías de la programación\práctica 1\md_pràctica1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1548286141 source:c:\users\gl552w-dm142t\documents\documentos de arey\cuarto\primer cuatrimestre\metodologías de la programación\prácticas\pràctica1\md_pràctica1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+

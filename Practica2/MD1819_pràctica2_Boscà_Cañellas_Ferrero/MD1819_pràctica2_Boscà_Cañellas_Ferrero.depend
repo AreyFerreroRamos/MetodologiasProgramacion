@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1541440410 source:c:\users\gl552w-dm142t\documents\documentos de arey\cuarto\primer cuatrimestre\metodologías de la programación\práctica 1\md1819_pràctica2_boscà_cañellas_ferrero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<time.h>
+
+1542099004 source:c:\users\gl552w-dm142t\documents\documentos de arey\cuarto\primer cuatrimestre\metodologías de la programación\prácticas\práctica2\md1819_pràctica2_boscà_cañellas_ferrero\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<time.h>
+

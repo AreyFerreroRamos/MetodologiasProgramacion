@@ -1,0 +1,77 @@
+int ubicarPivot(int v[], int ini, int fin)
+{
+    int pivot=v[ini], pos=ini, i, j, aux;
+
+    for (i=ini+1; i<=fin; i++) {
+        if (pivot>v[i]) {
+            aux=v[i];
+            for (j=i-1; j>=pos; j--) {
+                v[j+1]=v[j];
+            }
+            v[j+1]=aux;
+            pos++;
+        }
+    }
+    return pos;
+}
+
+void QuickSort(int v[], int ini, int fin)
+{
+    int pos;
+
+    pos=ubicarPivot(v, ini, fin);
+    QuickSort(v, ini, pos-1);
+    QuickSort(v, pos+1, fin);
+}
+
+
+void Merge(int v[], int ini, int mig, int fin)
+{
+    int i, j=mig+1, aux;
+
+    for (i=ini; i<=mig; i++) {
+        if (v[i]>v[j]) {
+            aux=v[i];
+            v[i]=v[j];
+            while ((j<fin)&&(aux>v[j+1])) {
+                v[j]=v[j+1];
+                j++;
+            }
+            v[j]=aux;
+        }
+    }
+}
+
+int Ordenar(int v[], int ini, int fin)
+{
+    int pivot=v[ini], mig, i=ini+1, j=fin, aux;
+
+    while (i<j) {
+        if (v[i]>pivot) {
+            if (v[j]<pivot) {
+                aux=v[i];
+                v[i]=v[j];
+                v[j]=aux;
+                i++;
+            }
+            j--;
+        }
+        else {
+            if (v[j]>pivot) {
+                j--;
+            }
+            i++;
+        }
+    }
+    if (v[i]>pivot) {
+        mig=i;
+    }
+    else {
+        mig=i+1;
+    }
+    for (i=ini; i<mig-1; i++) {
+        v[i]=v[i+1];
+    }
+    v[i]=pivot;
+    return mig;
+}
